@@ -1,0 +1,424 @@
+{
+  "method": "expit(saved observed scores); floor(p*10), capped at 9; empty bins omitted",
+  "selection": "first configured split and first training seed; no model refitting or pooling",
+  "datasets": [
+    {
+      "dataset": "banknote",
+      "split_seed": 1701,
+      "training_seed": 101,
+      "unique_test_cases": 337,
+      "positive_cases": 152,
+      "prediction_sha256": "709a2b9fd92a3fd2371a0104cf78cf31f817cd55be8adc32ae238fe7a33586a3",
+      "metrics_sha256": "a44454d68f22f85d477b13d17f96d659c121b7a6a10a5542265f4bfd364e2386",
+      "models": [
+        {
+          "model": "baseline",
+          "ece_10_equal_width": 0.03611522928380878,
+          "bins": [
+            {
+              "bin": 0,
+              "count": 168,
+              "mean_probability": 0.017007574609868466,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 1,
+              "count": 9,
+              "mean_probability": 0.14209185863156748,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 2,
+              "count": 1,
+              "mean_probability": 0.2337738811299421,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 3,
+              "count": 2,
+              "mean_probability": 0.32168744993903575,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 4,
+              "mean_probability": 0.4389161740001635,
+              "observed_rate": 0.25
+            },
+            {
+              "bin": 5,
+              "count": 1,
+              "mean_probability": 0.5489869929138197,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 6,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 7,
+              "count": 2,
+              "mean_probability": 0.7556584111653366,
+              "observed_rate": 0.5
+            },
+            {
+              "bin": 8,
+              "count": 11,
+              "mean_probability": 0.8460887385324583,
+              "observed_rate": 1.0
+            },
+            {
+              "bin": 9,
+              "count": 139,
+              "mean_probability": 0.9737511378553566,
+              "observed_rate": 1.0
+            }
+          ]
+        },
+        {
+          "model": "tuned_logistic",
+          "ece_10_equal_width": 0.014026887650074175,
+          "bins": [
+            {
+              "bin": 0,
+              "count": 179,
+              "mean_probability": 0.0032189842432569795,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 1,
+              "count": 2,
+              "mean_probability": 0.14864919498702597,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 2,
+              "count": 3,
+              "mean_probability": 0.2496278770123208,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 3,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 4,
+              "count": 1,
+              "mean_probability": 0.4776749533879552,
+              "observed_rate": 1.0
+            },
+            {
+              "bin": 5,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 6,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 7,
+              "count": 1,
+              "mean_probability": 0.7884830080242691,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 8,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 9,
+              "count": 151,
+              "mean_probability": 0.9881200471332141,
+              "observed_rate": 1.0
+            }
+          ]
+        },
+        {
+          "model": "calibrated_forest",
+          "ece_10_equal_width": 0.06594614094101242,
+          "bins": [
+            {
+              "bin": 0,
+              "count": 164,
+              "mean_probability": 0.051418403128961246,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 1,
+              "count": 9,
+              "mean_probability": 0.1347271668543526,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 2,
+              "count": 4,
+              "mean_probability": 0.22432523689390862,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 3,
+              "count": 1,
+              "mean_probability": 0.334740416335151,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 5,
+              "count": 1,
+              "mean_probability": 0.5153616488439243,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 6,
+              "count": 4,
+              "mean_probability": 0.660696717374147,
+              "observed_rate": 0.5
+            },
+            {
+              "bin": 7,
+              "count": 7,
+              "mean_probability": 0.7621215210800224,
+              "observed_rate": 0.8571428571428571
+            },
+            {
+              "bin": 8,
+              "count": 23,
+              "mean_probability": 0.8647903434426351,
+              "observed_rate": 0.8695652173913043
+            },
+            {
+              "bin": 9,
+              "count": 124,
+              "mean_probability": 0.9240844713970013,
+              "observed_rate": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dataset": "ionosphere",
+      "split_seed": 1701,
+      "training_seed": 101,
+      "unique_test_cases": 88,
+      "positive_cases": 57,
+      "prediction_sha256": "6bac9c47f78a7fa0f229c005db4c50bddd8605f9da7383802385b2213ad14ce7",
+      "metrics_sha256": "2b7139071b8ec2d166c756f4d5ed9553e98081c9b54485d1f4821258b4664455",
+      "models": [
+        {
+          "model": "baseline",
+          "ece_10_equal_width": 0.06231240651086295,
+          "bins": [
+            {
+              "bin": 0,
+              "count": 18,
+              "mean_probability": 0.011432044783514096,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 1,
+              "count": 2,
+              "mean_probability": 0.13476550138219856,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 2,
+              "count": 1,
+              "mean_probability": 0.2497767450198301,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 3,
+              "count": 2,
+              "mean_probability": 0.35519665232225806,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 2,
+              "mean_probability": 0.4334664618637911,
+              "observed_rate": 0.5
+            },
+            {
+              "bin": 5,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 6,
+              "count": 3,
+              "mean_probability": 0.633344871555732,
+              "observed_rate": 1.0
+            },
+            {
+              "bin": 7,
+              "count": 6,
+              "mean_probability": 0.7538252024287502,
+              "observed_rate": 0.8333333333333334
+            },
+            {
+              "bin": 8,
+              "count": 15,
+              "mean_probability": 0.8518992840231783,
+              "observed_rate": 0.7333333333333333
+            },
+            {
+              "bin": 9,
+              "count": 39,
+              "mean_probability": 0.963062651462655,
+              "observed_rate": 0.9487179487179487
+            }
+          ]
+        },
+        {
+          "model": "tuned_logistic",
+          "ece_10_equal_width": 0.09746273807710391,
+          "bins": [
+            {
+              "bin": 0,
+              "count": 13,
+              "mean_probability": 0.04588606293396234,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 1,
+              "count": 4,
+              "mean_probability": 0.15337238464486058,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 2,
+              "count": 3,
+              "mean_probability": 0.2097574563052729,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 3,
+              "count": 1,
+              "mean_probability": 0.35442374786786823,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 1,
+              "mean_probability": 0.45638644133759637,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 5,
+              "mean_probability": 0.5640755698874591,
+              "observed_rate": 0.4
+            },
+            {
+              "bin": 6,
+              "count": 8,
+              "mean_probability": 0.6600494632755393,
+              "observed_rate": 0.625
+            },
+            {
+              "bin": 7,
+              "count": 13,
+              "mean_probability": 0.7507271931419119,
+              "observed_rate": 0.8461538461538461
+            },
+            {
+              "bin": 8,
+              "count": 25,
+              "mean_probability": 0.8570369130110213,
+              "observed_rate": 0.96
+            },
+            {
+              "bin": 9,
+              "count": 15,
+              "mean_probability": 0.9325844789052209,
+              "observed_rate": 1.0
+            }
+          ]
+        },
+        {
+          "model": "calibrated_forest",
+          "ece_10_equal_width": 0.19370592569506032,
+          "bins": [
+            {
+              "bin": 0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            },
+            {
+              "bin": 1,
+              "count": 1,
+              "mean_probability": 0.18842035491043124,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 2,
+              "count": 15,
+              "mean_probability": 0.2542061548025093,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 3,
+              "count": 6,
+              "mean_probability": 0.35172966849027176,
+              "observed_rate": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 7,
+              "mean_probability": 0.4450729494706918,
+              "observed_rate": 0.14285714285714285
+            },
+            {
+              "bin": 5,
+              "count": 2,
+              "mean_probability": 0.5635151477642877,
+              "observed_rate": 1.0
+            },
+            {
+              "bin": 6,
+              "count": 6,
+              "mean_probability": 0.6638829202817822,
+              "observed_rate": 0.6666666666666666
+            },
+            {
+              "bin": 7,
+              "count": 13,
+              "mean_probability": 0.7615073910055628,
+              "observed_rate": 0.9230769230769231
+            },
+            {
+              "bin": 8,
+              "count": 38,
+              "mean_probability": 0.846614630861254,
+              "observed_rate": 1.0
+            },
+            {
+              "bin": 9,
+              "count": 0,
+              "mean_probability": null,
+              "observed_rate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,16 @@
 {
   "schema": "publication-manifest-v1",
-  "purpose": "Phase 6 MIT-authorized private release candidate",
+  "purpose": "Reviewed main-branch inventory with calibration visualization; original v0.2.0rc1 tag manifest unchanged",
   "license": "MIT for original project code only; third-party terms preserved",
   "included": {
     ".gitattributes": "583b540d87a2b34d91b698acc855ac29c7913b88348438aa37f5a6d007b6e221",
-    ".gitignore": "e2e0f8951497ea923b509c0346909e7e906520201f65848b7246b00f3426dcde",
+    ".gitignore": "6e3bfd078f1ee00bd390117d31321f4c614d91da96fb5e79f566f712a4ca0817",
     "AGENTS.md": "742ecaae6a61fec185722a88d5a738c6039ce0754b3845fb43119dac877db9c5",
     "bootstrap-windows.ps1": "185aebf65f82e0d3d1e4a7008c90beacfa45933edcb18283735452b51589d2d0",
     "LICENSE": "28d8ac78596c1a6f7474487c686d592ef73767f9699f8399e92e300554c19532",
     "publish-github.ps1": "ff4179d854f64bc837d088595a09d5a0efd01b33d8e431f042e0e7462d4008ab",
     "pyproject.toml": "79c418a9a6eba3e0bab278980ccde1195f156272cfdb055095b389cf17168a41",
-    "README.md": "09d77e0d7219cd712f7164da1c56f1411b56cde764481c918089e595bdef0771",
+    "README.md": "c29d79c11a13caf77e47aaa23da91752ece1c5f11a07ba729f393fbf87c1dfdb",
     "requirements.txt": "9d6d2c2e18451cd8eb86a739cbcb1664e4342ef4ae478266a3c333dd4f73674a",
     "run-all.ps1": "49919128f012989544fd0f5a6802290497a6229157ce64d4dda32f3da035b95e",
     "run-phase2.ps1": "8ac277cff875557c85d86f188ae330d2de5402746a72bd93b993baa6e23e5073",
@@ -98,7 +98,10 @@
     "src/model_assurance/__init__.py": "8062abdd401fbc8bb40a9cb1b5fd324d62ddb715da7000c32bb3efa71b213622",
     "tests/test_assurance.py": "2801e09e5e5204bf98987e22d6eb017458b315d0d074ae6bb6d669c0292fb44c",
     "tests/test_external_validation.py": "1d01b7ca0da62c51cba6b8ed6ae86fc3d957098ebf38d2432c7309403274d5bd",
-    "tests/test_robustness.py": "20489e61941cd60d1a09412fb3b5b1900354b15786495d97a9c167ccd89701be"
+    "tests/test_robustness.py": "20489e61941cd60d1a09412fb3b5b1900354b15786495d97a9c167ccd89701be",
+    "repro/plot_calibration.py": "17a913973bdc96f8fb0d6a5bee86ff18d2d432ad7395bbcb02e92dbc92882ee3",
+    "figures/phase3_calibration.png": "27be0a031bf3417bb2dab61fd9347aedf1edab63f4a0daddef19ae971d348d52",
+    "figures/phase3_calibration.json": "2bcd5105cddcd4bb2d6796d390b805bbd90d8301db42f446657e3c71d54960e4"
   },
   "excluded": {
     ".venv/**": "local environment",
@@ -110,7 +113,7 @@
     "**/*.key": "private-key candidates",
     "reports/**": "working archives/audits, including falsified scratch fixtures",
     "results/**": "unreviewed generated outputs and caches",
-    "figures/**": "working figures except explicitly selected evidence",
+    "figures/**": "Working generated figures, except the explicitly included README calibration PNG/JSON",
     "docs/research_demo.md": "historical conversational context not needed for public release",
     "offline-wheels/**": "separate local verification kit, not a proposed Git commit"
   },

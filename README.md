@@ -26,6 +26,43 @@ Confidence-interval coverage, statistical power and false-release control have
 power or utility guarantees. Human review is mandatory; automatic deployment
 authorization is always false. No deployment system is implemented.
 
+## Calibration on saved held-out predictions
+
+![Calibration curves for baseline logistic, validation-tuned logistic and sigmoid-calibrated forest on Banknote and Ionosphere held-out data](figures/phase3_calibration.png)
+
+These reliability diagrams use the archived Phase 3 **Banknote Authentication
+(337 test cases)** and **Ionosphere (88 test cases)** predictions. They show the
+first configured split (seed **1701**) and training seed (**101**) for each model;
+repeated splits/seeds are not pooled as independent observations. Probabilities
+are `expit(saved score)`. Forest sigmoid calibration was fitted on the separate
+calibration partition; no model or calibrator is fitted to these plotted test data.
+Class 1 is the original UCI class 1 for Banknote and good returns for Ionosphere;
+see the [dataset notices](docs/datasets.md).
+
+Ten fixed equal-width bins partition [0, 1]: [0, 0.1), ..., [0.9, 1], with
+probability 1 assigned to the final bin. Each point is the bin's mean predicted
+probability against its observed class-1 fraction; empty bins are omitted, lines
+join populated bins only as visual guides, and the lower panels show bin counts.
+The dotted diagonal represents perfect calibration. Points above it indicate
+underprediction of class-1 frequency; points below it indicate overprediction.
+Differences illustrate that probability agreement varies by model and dataset,
+including after sigmoid calibration. Sparse bins and the small Ionosphere test
+set can produce large fluctuations; these single-run curves have no uncertainty
+bands and do not establish generalization, guaranteed calibration, statistical
+certification or deployment approval. Human review remains mandatory.
+
+Reproduce from the repository root in the documented short-path environment:
+
+```powershell
+& .\.venv\Scripts\python.exe -B repro/plot_calibration.py
+```
+
+The script checks input SHA256 hashes and recomputes all plotted bins against
+archived metrics. [Plot data and provenance](figures/phase3_calibration.json)
+record source hashes, selected seeds, bin counts and descriptive ECE values.
+Only the named README figure/data derivatives are regenerated; archived
+predictions and historical metrics remain unchanged.
+
 ## Windows PowerShell
 
 From the project in VS Code's PowerShell terminal:

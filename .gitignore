@@ -17,3 +17,7 @@ reports/*
 !reports/.gitkeep
 figures/*
 !figures/.gitkeep
+
+# Reviewed README derivatives only; other generated figures remain ignored.
+!figures/phase3_calibration.png
+!figures/phase3_calibration.json
