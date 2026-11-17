@@ -1,0 +1,12 @@
+evaluation_seed: 2026
+test_size: 0.30
+calibration_size: 0.25
+split_seeds: [11, 22, 33]
+training_seeds: [101, 202, 303]
+bootstrap_seed: 904
+bootstrap_replicates: 5000
+family_confidence: 0.95
+logistic_c: 0.1
+forest_trees: 100
+forest_min_leaf: 3
+calibration_c: 1.0

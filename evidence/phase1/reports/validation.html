@@ -1,0 +1,210 @@
+<!doctype html><html lang='en'><meta charset='utf-8'><title>Illustrative independent model validation protocol</title><style>body{font:16px system-ui;max-width:980px;margin:3rem auto;line-height:1.5}pre{white-space:pre-wrap;background:#f4f4f4;padding:1rem}h1{color:#19324d}</style><h1>Multi-level model change validation</h1><p><strong>Research prototype only.</strong> Built-in dataset, controlled score transformation. Not an official independent audit or deployment approval.</p><h2>Executive summary and advisory disposition</h2><p>recommend_additional_evaluation: Uncertainty does not resolve improvement/regression criteria</p><h2>Configuration, metrics, uncertainty, assumptions, reproducibility</h2><pre>{
+  &quot;assumptions&quot;: [
+    &quot;independent held-out subjects&quot;,
+    &quot;conditional case-bootstrap inference&quot;,
+    &quot;no independent training-run variance estimate&quot;
+  ],
+  &quot;baseline_metrics&quot;: {
+    &quot;accuracy&quot;: 0.9883040935672515,
+    &quot;brier&quot;: 0.017025223857363814,
+    &quot;confusion_matrix&quot;: [
+      [
+        63,
+        1
+      ],
+      [
+        1,
+        106
+      ]
+    ],
+    &quot;f1&quot;: 0.9906542056074766,
+    &quot;log_loss&quot;: 0.06553550580694069,
+    &quot;precision&quot;: 0.9906542056074766,
+    &quot;recall&quot;: 0.9906542056074766
+  },
+  &quot;challenger_metrics&quot;: {
+    &quot;accuracy&quot;: 0.9883040935672515,
+    &quot;brier&quot;: 0.02143797462400652,
+    &quot;confusion_matrix&quot;: [
+      [
+        63,
+        1
+      ],
+      [
+        1,
+        106
+      ]
+    ],
+    &quot;f1&quot;: 0.9906542056074766,
+    &quot;log_loss&quot;: 0.0872346949403982,
+    &quot;precision&quot;: 0.9906542056074766,
+    &quot;recall&quot;: 0.9906542056074766
+  },
+  &quot;configuration&quot;: {
+    &quot;bootstrap_replicates&quot;: 2000,
+    &quot;challenger_logit_scale&quot;: 0.7,
+    &quot;confidence&quot;: 0.95,
+    &quot;minimum_cases&quot;: 100,
+    &quot;minimum_logloss_improvement&quot;: 0.0,
+    &quot;rejection_tolerance&quot;: 0.02,
+    &quot;safety_veto&quot;: false,
+    &quot;seed&quot;: 42,
+    &quot;test_size&quot;: 0.3
+  },
+  &quot;dataset&quot;: &quot;sklearn breast_cancer&quot;,
+  &quot;decision_disagreement_rate&quot;: 0.0,
+  &quot;environment&quot;: {
+    &quot;numpy&quot;: &quot;2.4.6&quot;,
+    &quot;python&quot;: &quot;3.11.9&quot;,
+    &quot;scikit_learn&quot;: &quot;1.9.1&quot;,
+    &quot;scipy&quot;: &quot;1.17.1&quot;
+  },
+  &quot;experiment_type&quot;: &quot;fixed trained baseline plus controlled positive logit scaling&quot;,
+  &quot;mcnemar_exploratory&quot;: {
+    &quot;baseline_only_correct&quot;: 0,
+    &quot;challenger_only_correct&quot;: 0,
+    &quot;p_value_two_sided&quot;: 1.0
+  },
+  &quot;mean_absolute_probability_change&quot;: 0.022107955194445836,
+  &quot;mean_absolute_score_change&quot;: 2.2318512480013166,
+  &quot;n_test&quot;: 171,
+  &quot;n_train&quot;: 398,
+  &quot;paired_brier_difference&quot;: 0.004412750766642702,
+  &quot;paired_logloss_difference_ci&quot;: {
+    &quot;confidence&quot;: 0.95,
+    &quot;estimate&quot;: 0.021699189133457517,
+    &quot;lower&quot;: 0.013204632915378232,
+    &quot;replicates&quot;: 2000,
+    &quot;upper&quot;: 0.02835873436663756
+  },
+  &quot;project&quot;: &quot;Statistical Assurance of AI Model Changes&quot;,
+  &quot;recommendation&quot;: {
+    &quot;final_human_approval_required&quot;: true,
+    &quot;reason&quot;: &quot;Uncertainty does not resolve improvement/regression criteria&quot;,
+    &quot;status&quot;: &quot;recommend_additional_evaluation&quot;
+  },
+  &quot;reliability_baseline&quot;: [
+    {
+      &quot;bin&quot;: 0,
+      &quot;count&quot;: 55,
+      &quot;mean_probability&quot;: 0.0050543055925605495,
+      &quot;observed_rate&quot;: 0.0
+    },
+    {
+      &quot;bin&quot;: 1,
+      &quot;count&quot;: 0,
+      &quot;mean_probability&quot;: null,
+      &quot;observed_rate&quot;: null
+    },
+    {
+      &quot;bin&quot;: 2,
+      &quot;count&quot;: 6,
+      &quot;mean_probability&quot;: 0.2483988835214552,
+      &quot;observed_rate&quot;: 0.0
+    },
+    {
+      &quot;bin&quot;: 3,
+      &quot;count&quot;: 3,
+      &quot;mean_probability&quot;: 0.36160383876758456,
+      &quot;observed_rate&quot;: 0.3333333333333333
+    },
+    {
+      &quot;bin&quot;: 4,
+      &quot;count&quot;: 0,
+      &quot;mean_probability&quot;: null,
+      &quot;observed_rate&quot;: null
+    },
+    {
+      &quot;bin&quot;: 5,
+      &quot;count&quot;: 3,
+      &quot;mean_probability&quot;: 0.5507578381588377,
+      &quot;observed_rate&quot;: 1.0
+    },
+    {
+      &quot;bin&quot;: 6,
+      &quot;count&quot;: 2,
+      &quot;mean_probability&quot;: 0.6506102702003602,
+      &quot;observed_rate&quot;: 1.0
+    },
+    {
+      &quot;bin&quot;: 7,
+      &quot;count&quot;: 0,
+      &quot;mean_probability&quot;: null,
+      &quot;observed_rate&quot;: null
+    },
+    {
+      &quot;bin&quot;: 8,
+      &quot;count&quot;: 11,
+      &quot;mean_probability&quot;: 0.8581215115314967,
+      &quot;observed_rate&quot;: 0.9090909090909091
+    },
+    {
+      &quot;bin&quot;: 9,
+      &quot;count&quot;: 91,
+      &quot;mean_probability&quot;: 0.9881263507156027,
+      &quot;observed_rate&quot;: 1.0
+    }
+  ],
+  &quot;reliability_challenger&quot;: [
+    {
+      &quot;bin&quot;: 0,
+      &quot;count&quot;: 53,
+      &quot;mean_probability&quot;: 0.009232985981468572,
+      &quot;observed_rate&quot;: 0.0
+    },
+    {
+      &quot;bin&quot;: 1,
+      &quot;count&quot;: 2,
+      &quot;mean_probability&quot;: 0.14610780709417784,
+      &quot;observed_rate&quot;: 0.0
+    },
+    {
+      &quot;bin&quot;: 2,
+      &quot;count&quot;: 3,
+      &quot;mean_probability&quot;: 0.28501033706847484,
+      &quot;observed_rate&quot;: 0.0
+    },
+    {
+      &quot;bin&quot;: 3,
+      &quot;count&quot;: 4,
+      &quot;mean_probability&quot;: 0.3565926609328916,
+      &quot;observed_rate&quot;: 0.0
+    },
+    {
+      &quot;bin&quot;: 4,
+      &quot;count&quot;: 2,
+      &quot;mean_probability&quot;: 0.40601128123196817,
+      &quot;observed_rate&quot;: 0.5
+    },
+    {
+      &quot;bin&quot;: 5,
+      &quot;count&quot;: 4,
+      &quot;mean_probability&quot;: 0.5484999304835114,
+      &quot;observed_rate&quot;: 1.0
+    },
+    {
+      &quot;bin&quot;: 6,
+      &quot;count&quot;: 1,
+      &quot;mean_probability&quot;: 0.6273890598307904,
+      &quot;observed_rate&quot;: 1.0
+    },
+    {
+      &quot;bin&quot;: 7,
+      &quot;count&quot;: 9,
+      &quot;mean_probability&quot;: 0.7731163652481327,
+      &quot;observed_rate&quot;: 0.8888888888888888
+    },
+    {
+      &quot;bin&quot;: 8,
+      &quot;count&quot;: 11,
+      &quot;mean_probability&quot;: 0.8464778879779392,
+      &quot;observed_rate&quot;: 1.0
+    },
+    {
+      &quot;bin&quot;: 9,
+      &quot;count&quot;: 82,
+      &quot;mean_probability&quot;: 0.9812557547002773,
+      &quot;observed_rate&quot;: 1.0
+    }
+  ]
+}</pre><h2>Probability reliability</h2><img style='max-width:100%' alt='Reliability diagram' src='../figures/reliability.png'><p>Limitations: one training fit/split; bootstrap across test cases only; human review required; no safety or subgroup assessment.</p></html>

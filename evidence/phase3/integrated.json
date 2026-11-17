@@ -1,0 +1,163 @@
+{
+  "datasets": {
+    "banknote": {
+      "tuned_logistic": {
+        "joint_refit_and_test_ci": {
+          "estimate": -0.029266026200445907,
+          "lower": -0.03799119171362761,
+          "upper": -0.01877655464872709,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "evaluation_only_ci": {
+          "estimate": -0.029266026200445907,
+          "lower": -0.03746350398155093,
+          "upper": -0.02212716307481278,
+          "confidence": 0.9875,
+          "replicates": 10000,
+          "expected_draws_per_tail": 62.5
+        },
+        "training_validation_calibration_only_ci": {
+          "estimate": -0.029266026200445907,
+          "lower": -0.032714495293885225,
+          "upper": -0.021333905045580182,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "assurance": {
+          "category": "improvement",
+          "reason": "Upper bound clears minimum improvement",
+          "automatic_deployment_allowed": false,
+          "human_review_required": true
+        },
+        "split_effects_descriptive": [
+          -0.029266026200445907,
+          -0.02876426690848286,
+          -0.02296245045505339
+        ],
+        "split_sd_descriptive": 0.003503519747441064
+      },
+      "calibrated_forest": {
+        "joint_refit_and_test_ci": {
+          "estimate": 0.06499755322412984,
+          "lower": 0.0448582120656549,
+          "upper": 0.13301432914683056,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "evaluation_only_ci": {
+          "estimate": 0.06499755322412984,
+          "lower": 0.03979949642793241,
+          "upper": 0.0949030221851674,
+          "confidence": 0.9875,
+          "replicates": 10000,
+          "expected_draws_per_tail": 62.5
+        },
+        "training_validation_calibration_only_ci": {
+          "estimate": 0.06499755322412984,
+          "lower": 0.05701620150061665,
+          "upper": 0.11752947336793892,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "assurance": {
+          "category": "degradation",
+          "reason": "Lower bound exceeds degradation margin",
+          "automatic_deployment_allowed": false,
+          "human_review_required": true
+        },
+        "split_effects_descriptive": [
+          0.06499755322412984,
+          0.05716586620056542,
+          0.05604298375561673
+        ],
+        "split_sd_descriptive": 0.00487819128001811
+      }
+    },
+    "ionosphere": {
+      "tuned_logistic": {
+        "joint_refit_and_test_ci": {
+          "estimate": 0.022717867321160448,
+          "lower": -0.34210107714600185,
+          "upper": 0.12169791248472822,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "evaluation_only_ci": {
+          "estimate": 0.022717867321160448,
+          "lower": -0.05693430406698078,
+          "upper": 0.08955826154535915,
+          "confidence": 0.9875,
+          "replicates": 10000,
+          "expected_draws_per_tail": 62.5
+        },
+        "training_validation_calibration_only_ci": {
+          "estimate": 0.022717867321160448,
+          "lower": -0.23644582116505636,
+          "upper": 0.07684381904030285,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "assurance": {
+          "category": "inconclusive",
+          "reason": "Bounds do not resolve prespecified criteria",
+          "automatic_deployment_allowed": false,
+          "human_review_required": true
+        },
+        "split_effects_descriptive": [
+          0.022717867321160448,
+          -0.09993809870070632,
+          -0.15524542665394378
+        ],
+        "split_sd_descriptive": 0.09108084369444695
+      },
+      "calibrated_forest": {
+        "joint_refit_and_test_ci": {
+          "estimate": 0.047747430199992634,
+          "lower": -0.4651909913698015,
+          "upper": 0.18713404497324784,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "evaluation_only_ci": {
+          "estimate": 0.047747430199992634,
+          "lower": -0.0804391494606153,
+          "upper": 0.1602003399571024,
+          "confidence": 0.9875,
+          "replicates": 10000,
+          "expected_draws_per_tail": 62.5
+        },
+        "training_validation_calibration_only_ci": {
+          "estimate": 0.047747430199992634,
+          "lower": -0.318807520532958,
+          "upper": 0.1368424558063003,
+          "confidence": 0.9875,
+          "replicates": 2000,
+          "expected_draws_per_tail": 12.5
+        },
+        "assurance": {
+          "category": "inconclusive",
+          "reason": "Bounds do not resolve prespecified criteria",
+          "automatic_deployment_allowed": false,
+          "human_review_required": true
+        },
+        "split_effects_descriptive": [
+          0.047747430199992634,
+          -0.10214007274731561,
+          -0.23824710129818794
+        ],
+        "split_sd_descriptive": 0.1430525887028911
+      }
+    }
+  },
+  "family_size": 4,
+  "automatic_deployment_allowed": false,
+  "human_review_required": true
+}

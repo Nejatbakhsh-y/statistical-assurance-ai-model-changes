@@ -1,0 +1,21 @@
+datasets: [banknote, ionosphere]
+split_seeds: [1701, 2903, 4307]
+training_seeds: [101, 202]
+workers: 4
+test_fraction: 0.25
+validation_fraction: 0.15
+calibration_fraction: 0.15
+logistic_candidates: [0.1, 1.0, 10.0]
+forest_trees: 50
+forest_min_leaf: 3
+calibration_c: 1.0
+bootstrap_seed: 9301
+refit_replicates: 2000
+evaluation_replicates: 10000
+family_alpha: 0.05
+minimum_improvement: 0.01
+noninferiority_margin: 0.02
+degradation_margin: 0.02
+minimum_test_cases: 80
+minimum_tail_draws: 10
+safety_veto: false

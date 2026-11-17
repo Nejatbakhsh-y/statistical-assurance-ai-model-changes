@@ -1,0 +1,101 @@
+{
+  "python": "3.11.9",
+  "executable": "python",
+  "platform": "archived Windows runtime; host-specific detail omitted",
+  "argv": [
+    "python",
+    "-m",
+    "model_assurance.external_validation",
+    "--config",
+    "configs/phase3.yaml",
+    "--output",
+    "results/new-phase3",
+    "--offline"
+  ],
+  "packages": {
+    "cloudpickle": "3.1.2",
+    "colorama": "0.4.6",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.68.0",
+    "iniconfig": "2.3.1",
+    "joblib": "1.6.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.11.2",
+    "model-assurance-research": "0.1.0",
+    "narwhals": "2.28.0",
+    "numpy": "2.4.6",
+    "packaging": "26.3",
+    "pillow": "13.0.0",
+    "pip": "24.0",
+    "pluggy": "1.7.0",
+    "Pygments": "2.21.0",
+    "pyparsing": "3.3.3",
+    "pytest": "9.2.0",
+    "python-dateutil": "4.0.0",
+    "PyYAML": "6.0.3",
+    "ruff": "0.17.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "setuptools": "65.5.0",
+    "threadpoolctl": "3.8.0",
+    "tzdata": "2026.6"
+  },
+  "configuration": {
+    "datasets": [
+      "banknote",
+      "ionosphere"
+    ],
+    "split_seeds": [
+      1701,
+      2903,
+      4307
+    ],
+    "training_seeds": [
+      101,
+      202
+    ],
+    "workers": 4,
+    "test_fraction": 0.25,
+    "validation_fraction": 0.15,
+    "calibration_fraction": 0.15,
+    "logistic_candidates": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "forest_trees": 50,
+    "forest_min_leaf": 3,
+    "calibration_c": 1.0,
+    "bootstrap_seed": 9301,
+    "refit_replicates": 2000,
+    "evaluation_replicates": 10000,
+    "family_alpha": 0.05,
+    "minimum_improvement": 0.01,
+    "noninferiority_margin": 0.02,
+    "degradation_margin": 0.02,
+    "minimum_test_cases": 80,
+    "minimum_tail_draws": 10,
+    "safety_veto": false
+  },
+  "config_sha256": "391b8fb17c48c5ea20453c7dd1a286ffebeca0de2097ed5576a38f3dd0c30a70",
+  "manifest_sha256": "5631cf86badc2cb4c015e93c00f86ae0fd3d663af0f351a314f26fc59df14ea2",
+  "source_sha256": {
+    "assurance.py": "5d7a3a8b1b90f4995dabda4670ede49bf8dd6ef284b7d71670e64620ebb8abac",
+    "calibration.py": "b488ede534187e318252d3c298af7a3b5b9fcdc07c38088c075f513842b045ec",
+    "cli.py": "966707668bd670cd867a3a3e1b5b8b2f74ac0e681b5e20600e83127b83689862",
+    "data.py": "a985be4ca644b5ab70e158e1750523f92333c9f5e766a1fd71e6fd2437aa1bad",
+    "decision_framework.py": "d4eed4f6829be01507e1bc7607511454007282477255f6a64bbbf740c83aeef8",
+    "evaluation.py": "5b23125f7c089894634a13fb17a00e0f9c9e5443ec7bff623f4553532ac1dd39",
+    "external_data.py": "046fd767ef428bbf7d0cd9e5416990f83652f9ba413d625f20500314a8de5fec",
+    "external_validation.py": "6809c35c2441aca7999ad100ab6b6c7b8bc338307ae709f7d8dcd62752c3d1e6",
+    "logits.py": "4cb9409093957a423a80f8ad7ca8f5409c3574d32f19a4fd1178384ee961d16e",
+    "models.py": "c5b3816f7f4bae7a0e5235134b53db10aed2ab0de644cd73bede246068d8d746",
+    "power_analysis.py": "c3249801dd87630e71de5decf89b65039c78a487107daf8df39dece4d47e7a0e",
+    "reporting.py": "a18c1a0d64d411920c75d7b162fc57b3588c93df017ca77c2a9c0139d807d1d0",
+    "robustness.py": "57e555657c293142ec8521057503093a969d1d833f377442cf9dded674d640ef",
+    "statistics.py": "97b7055183267f925970e079d29a2b6f8b795b1880640d1fbf95c5aa9591aebe",
+    "verify_external.py": "aa0b9bef8f388d74f4b7452544d2670113565264ba2de80203166b6031da4ec7",
+    "__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+  }
+}

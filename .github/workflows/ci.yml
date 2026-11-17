@@ -1,0 +1,29 @@
+name: Research prototype checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.11']
+    timeout-minutes: 30
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B repro/verify_inventory.py
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m pip check
+      - run: python -m ruff check src tests
+      - run: python -m pytest -q
+      - run: python -m model_assurance.cli run --config configs/experiment.yaml --output results/ci-baseline

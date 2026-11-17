@@ -1,0 +1,38 @@
+{
+  "banknote": {
+    "uci_id": 267,
+    "name": "Banknote Authentication",
+    "citation": "Lohweg, V. (2012). Banknote Authentication. UCI Machine Learning Repository.",
+    "doi": "10.24432/C55P57",
+    "source": "https://archive.ics.uci.edu/dataset/267/banknote+authentication",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00267/data_banknote_authentication.txt",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "version": "Content-addressed UCI snapshot retrieved 2026-11-17; no upstream release number advertised",
+    "sha256": "d0539aaed2139ba7a587b3e34fb345ce503ff7d5d33dbf9912d8e195ce425cb9",
+    "bytes": 46400,
+    "rows": 1372,
+    "features": 4,
+    "labels": {"0": 0, "1": 1},
+    "positive_class": "Original UCI class 1; semantic label not inferred",
+    "independence_limit": "No original banknote specimen IDs supplied; image/specimen clustering cannot be excluded"
+  },
+  "ionosphere": {
+    "uci_id": 52,
+    "name": "Ionosphere",
+    "citation": "Sigillito, V., Wing, S., Hutton, L., and Baker, K. (1989). Ionosphere. UCI Machine Learning Repository.",
+    "doi": "10.24432/C5W01B",
+    "source": "https://archive.ics.uci.edu/dataset/52/ionosphere",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/ionosphere/ionosphere.data",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "version": "Content-addressed UCI snapshot retrieved 2026-11-17; no upstream release number advertised",
+    "sha256": "46d52186b84e20be52918adb93e8fb9926b34795ff7504c24350ae0616a04bbd",
+    "bytes": 76467,
+    "rows": 351,
+    "features": 34,
+    "labels": {"b": 0, "g": 1},
+    "positive_class": "Good radar return (g)",
+    "independence_limit": "Single Goose Bay radar system; session/time grouping unavailable, so independence of returns is unverified"
+  }
+}

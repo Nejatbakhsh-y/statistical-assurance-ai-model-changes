@@ -1,0 +1,210 @@
+{
+  "assumptions": [
+    "independent held-out subjects",
+    "conditional case-bootstrap inference",
+    "no independent training-run variance estimate"
+  ],
+  "baseline_metrics": {
+    "accuracy": 0.9883040935672515,
+    "brier": 0.017025223857363814,
+    "confusion_matrix": [
+      [
+        63,
+        1
+      ],
+      [
+        1,
+        106
+      ]
+    ],
+    "f1": 0.9906542056074766,
+    "log_loss": 0.06553550580694069,
+    "precision": 0.9906542056074766,
+    "recall": 0.9906542056074766
+  },
+  "challenger_metrics": {
+    "accuracy": 0.9883040935672515,
+    "brier": 0.02143797462400652,
+    "confusion_matrix": [
+      [
+        63,
+        1
+      ],
+      [
+        1,
+        106
+      ]
+    ],
+    "f1": 0.9906542056074766,
+    "log_loss": 0.0872346949403982,
+    "precision": 0.9906542056074766,
+    "recall": 0.9906542056074766
+  },
+  "configuration": {
+    "bootstrap_replicates": 2000,
+    "challenger_logit_scale": 0.7,
+    "confidence": 0.95,
+    "minimum_cases": 100,
+    "minimum_logloss_improvement": 0.0,
+    "rejection_tolerance": 0.02,
+    "safety_veto": false,
+    "seed": 42,
+    "test_size": 0.3
+  },
+  "dataset": "sklearn breast_cancer",
+  "decision_disagreement_rate": 0.0,
+  "environment": {
+    "numpy": "2.4.6",
+    "python": "3.11.9",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "experiment_type": "fixed trained baseline plus controlled positive logit scaling",
+  "mcnemar_exploratory": {
+    "baseline_only_correct": 0,
+    "challenger_only_correct": 0,
+    "p_value_two_sided": 1.0
+  },
+  "mean_absolute_probability_change": 0.022107955194445836,
+  "mean_absolute_score_change": 2.2318512480013166,
+  "n_test": 171,
+  "n_train": 398,
+  "paired_brier_difference": 0.004412750766642702,
+  "paired_logloss_difference_ci": {
+    "confidence": 0.95,
+    "estimate": 0.021699189133457517,
+    "lower": 0.013204632915378232,
+    "replicates": 2000,
+    "upper": 0.02835873436663756
+  },
+  "project": "Statistical Assurance of AI Model Changes",
+  "recommendation": {
+    "final_human_approval_required": true,
+    "reason": "Uncertainty does not resolve improvement/regression criteria",
+    "status": "recommend_additional_evaluation"
+  },
+  "reliability_baseline": [
+    {
+      "bin": 0,
+      "count": 55,
+      "mean_probability": 0.0050543055925605495,
+      "observed_rate": 0.0
+    },
+    {
+      "bin": 1,
+      "count": 0,
+      "mean_probability": null,
+      "observed_rate": null
+    },
+    {
+      "bin": 2,
+      "count": 6,
+      "mean_probability": 0.2483988835214552,
+      "observed_rate": 0.0
+    },
+    {
+      "bin": 3,
+      "count": 3,
+      "mean_probability": 0.36160383876758456,
+      "observed_rate": 0.3333333333333333
+    },
+    {
+      "bin": 4,
+      "count": 0,
+      "mean_probability": null,
+      "observed_rate": null
+    },
+    {
+      "bin": 5,
+      "count": 3,
+      "mean_probability": 0.5507578381588377,
+      "observed_rate": 1.0
+    },
+    {
+      "bin": 6,
+      "count": 2,
+      "mean_probability": 0.6506102702003602,
+      "observed_rate": 1.0
+    },
+    {
+      "bin": 7,
+      "count": 0,
+      "mean_probability": null,
+      "observed_rate": null
+    },
+    {
+      "bin": 8,
+      "count": 11,
+      "mean_probability": 0.8581215115314967,
+      "observed_rate": 0.9090909090909091
+    },
+    {
+      "bin": 9,
+      "count": 91,
+      "mean_probability": 0.9881263507156027,
+      "observed_rate": 1.0
+    }
+  ],
+  "reliability_challenger": [
+    {
+      "bin": 0,
+      "count": 53,
+      "mean_probability": 0.009232985981468572,
+      "observed_rate": 0.0
+    },
+    {
+      "bin": 1,
+      "count": 2,
+      "mean_probability": 0.14610780709417784,
+      "observed_rate": 0.0
+    },
+    {
+      "bin": 2,
+      "count": 3,
+      "mean_probability": 0.28501033706847484,
+      "observed_rate": 0.0
+    },
+    {
+      "bin": 3,
+      "count": 4,
+      "mean_probability": 0.3565926609328916,
+      "observed_rate": 0.0
+    },
+    {
+      "bin": 4,
+      "count": 2,
+      "mean_probability": 0.40601128123196817,
+      "observed_rate": 0.5
+    },
+    {
+      "bin": 5,
+      "count": 4,
+      "mean_probability": 0.5484999304835114,
+      "observed_rate": 1.0
+    },
+    {
+      "bin": 6,
+      "count": 1,
+      "mean_probability": 0.6273890598307904,
+      "observed_rate": 1.0
+    },
+    {
+      "bin": 7,
+      "count": 9,
+      "mean_probability": 0.7731163652481327,
+      "observed_rate": 0.8888888888888888
+    },
+    {
+      "bin": 8,
+      "count": 11,
+      "mean_probability": 0.8464778879779392,
+      "observed_rate": 1.0
+    },
+    {
+      "bin": 9,
+      "count": 82,
+      "mean_probability": 0.9812557547002773,
+      "observed_rate": 1.0
+    }
+  ]
+}

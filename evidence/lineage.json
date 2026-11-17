@@ -1,0 +1,228 @@
+{
+  "schema": "release-derivative-v1",
+  "artifacts": {
+    "evidence/phase1/results/metrics.json": {
+      "original_relative_path": "results/metrics.json",
+      "original_sha256": "6f8f47079928d40b85a5e32dda3ae3ae8b9fa64611d6a8624bf2a9618770ac94",
+      "staged_sha256": "6f8f47079928d40b85a5e32dda3ae3ae8b9fa64611d6a8624bf2a9618770ac94",
+      "operation": "byte-identical"
+    },
+    "evidence/phase1/results/case_predictions.csv": {
+      "original_relative_path": "results/case_predictions.csv",
+      "original_sha256": "56c56a520b857757294d5f32d377d6e90d2b02ec918ac3152444ec926a4693ae",
+      "staged_sha256": "56c56a520b857757294d5f32d377d6e90d2b02ec918ac3152444ec926a4693ae",
+      "operation": "byte-identical"
+    },
+    "evidence/phase1/reports/validation.html": {
+      "original_relative_path": "reports/validation.html",
+      "original_sha256": "1fb24b6115e44357bd8af899276522f2a17a8e868f78b99bec6716b1f089f049",
+      "staged_sha256": "1fb24b6115e44357bd8af899276522f2a17a8e868f78b99bec6716b1f089f049",
+      "operation": "byte-identical"
+    },
+    "evidence/phase1/figures/reliability.png": {
+      "original_relative_path": "figures/reliability.png",
+      "original_sha256": "3419afae3cacfb45c43d58a153603b5f346cf9aa9a70b8746e58cb3ec2bfb68c",
+      "staged_sha256": "3419afae3cacfb45c43d58a153603b5f346cf9aa9a70b8746e58cb3ec2bfb68c",
+      "operation": "byte-identical"
+    },
+    "evidence/phase2/metrics.json": {
+      "original_relative_path": "results/phase2-20261117-075627-011/metrics.json",
+      "original_sha256": "eb1bc24ee4e9fee32aa9aa011e4d3af19b28de11289a98024460f058a1c9507a",
+      "staged_sha256": "eb1bc24ee4e9fee32aa9aa011e4d3af19b28de11289a98024460f058a1c9507a",
+      "operation": "byte-identical"
+    },
+    "evidence/phase2/predictions.csv": {
+      "original_relative_path": "results/phase2-20261117-075627-011/predictions.csv",
+      "original_sha256": "1ed47931b2dd87c09ccce9949af321c2c3a8be5a79e3857a371855b04e2f3413",
+      "staged_sha256": "1ed47931b2dd87c09ccce9949af321c2c3a8be5a79e3857a371855b04e2f3413",
+      "operation": "byte-identical"
+    },
+    "evidence/phase2/validation.md": {
+      "original_relative_path": "results/phase2-20261117-075627-011/validation.md",
+      "original_sha256": "1acd221ee6bd3388d0b2c852a2a68003a484f065ef8f4f7edd204f6779dcbaa9",
+      "staged_sha256": "1acd221ee6bd3388d0b2c852a2a68003a484f065ef8f4f7edd204f6779dcbaa9",
+      "operation": "byte-identical"
+    },
+    "evidence/phase2/source/robustness.py": {
+      "original_relative_path": "reports/phase4-20261117/before/model_assurance/robustness.py",
+      "original_sha256": "57e555657c293142ec8521057503093a969d1d833f377442cf9dded674d640ef",
+      "staged_sha256": "57e555657c293142ec8521057503093a969d1d833f377442cf9dded674d640ef",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/banknote/metrics.json": {
+      "original_relative_path": "results/phase3-20261117-095543-473/banknote/metrics.json",
+      "original_sha256": "a44454d68f22f85d477b13d17f96d659c121b7a6a10a5542265f4bfd364e2386",
+      "staged_sha256": "a44454d68f22f85d477b13d17f96d659c121b7a6a10a5542265f4bfd364e2386",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/banknote/predictions.npz": {
+      "original_relative_path": "results/phase3-20261117-095543-473/banknote/predictions.npz",
+      "original_sha256": "709a2b9fd92a3fd2371a0104cf78cf31f817cd55be8adc32ae238fe7a33586a3",
+      "staged_sha256": "709a2b9fd92a3fd2371a0104cf78cf31f817cd55be8adc32ae238fe7a33586a3",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/banknote/validation.md": {
+      "original_relative_path": "results/phase3-20261117-095543-473/banknote/validation.md",
+      "original_sha256": "7d0e5c6f043438d42a0ae095b40573308b71d46af83f9113022d6709aba59f16",
+      "staged_sha256": "7d0e5c6f043438d42a0ae095b40573308b71d46af83f9113022d6709aba59f16",
+      "operation": "regenerated narrative; unchanged numeric evidence"
+    },
+    "evidence/phase3/ionosphere/metrics.json": {
+      "original_relative_path": "results/phase3-20261117-095543-473/ionosphere/metrics.json",
+      "original_sha256": "2b7139071b8ec2d166c756f4d5ed9553e98081c9b54485d1f4821258b4664455",
+      "staged_sha256": "2b7139071b8ec2d166c756f4d5ed9553e98081c9b54485d1f4821258b4664455",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/ionosphere/predictions.npz": {
+      "original_relative_path": "results/phase3-20261117-095543-473/ionosphere/predictions.npz",
+      "original_sha256": "6bac9c47f78a7fa0f229c005db4c50bddd8605f9da7383802385b2213ad14ce7",
+      "staged_sha256": "6bac9c47f78a7fa0f229c005db4c50bddd8605f9da7383802385b2213ad14ce7",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/ionosphere/validation.md": {
+      "original_relative_path": "results/phase3-20261117-095543-473/ionosphere/validation.md",
+      "original_sha256": "15de7253973b1d23d33f2b4b43746241dbe66508832aa3a2f2fc475b5581b09a",
+      "staged_sha256": "15de7253973b1d23d33f2b4b43746241dbe66508832aa3a2f2fc475b5581b09a",
+      "operation": "regenerated narrative; unchanged numeric evidence"
+    },
+    "evidence/phase3/integrated.json": {
+      "original_relative_path": "results/phase3-20261117-095543-473/integrated.json",
+      "original_sha256": "07e4e792d7ce613ba9e22b5d1ca3fff9311aa7bae8e928078fbaf568b78cce3c",
+      "staged_sha256": "07e4e792d7ce613ba9e22b5d1ca3fff9311aa7bae8e928078fbaf568b78cce3c",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/assurance.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/assurance.py",
+      "original_sha256": "5d7a3a8b1b90f4995dabda4670ede49bf8dd6ef284b7d71670e64620ebb8abac",
+      "staged_sha256": "5d7a3a8b1b90f4995dabda4670ede49bf8dd6ef284b7d71670e64620ebb8abac",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/calibration.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/calibration.py",
+      "original_sha256": "b488ede534187e318252d3c298af7a3b5b9fcdc07c38088c075f513842b045ec",
+      "staged_sha256": "b488ede534187e318252d3c298af7a3b5b9fcdc07c38088c075f513842b045ec",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/cli.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/cli.py",
+      "original_sha256": "966707668bd670cd867a3a3e1b5b8b2f74ac0e681b5e20600e83127b83689862",
+      "staged_sha256": "966707668bd670cd867a3a3e1b5b8b2f74ac0e681b5e20600e83127b83689862",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/data.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/data.py",
+      "original_sha256": "a985be4ca644b5ab70e158e1750523f92333c9f5e766a1fd71e6fd2437aa1bad",
+      "staged_sha256": "a985be4ca644b5ab70e158e1750523f92333c9f5e766a1fd71e6fd2437aa1bad",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/decision_framework.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/decision_framework.py",
+      "original_sha256": "d4eed4f6829be01507e1bc7607511454007282477255f6a64bbbf740c83aeef8",
+      "staged_sha256": "d4eed4f6829be01507e1bc7607511454007282477255f6a64bbbf740c83aeef8",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/evaluation.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/evaluation.py",
+      "original_sha256": "5b23125f7c089894634a13fb17a00e0f9c9e5443ec7bff623f4553532ac1dd39",
+      "staged_sha256": "5b23125f7c089894634a13fb17a00e0f9c9e5443ec7bff623f4553532ac1dd39",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/external_data.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/external_data.py",
+      "original_sha256": "046fd767ef428bbf7d0cd9e5416990f83652f9ba413d625f20500314a8de5fec",
+      "staged_sha256": "046fd767ef428bbf7d0cd9e5416990f83652f9ba413d625f20500314a8de5fec",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/external_validation.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/external_validation.py",
+      "original_sha256": "6809c35c2441aca7999ad100ab6b6c7b8bc338307ae709f7d8dcd62752c3d1e6",
+      "staged_sha256": "6809c35c2441aca7999ad100ab6b6c7b8bc338307ae709f7d8dcd62752c3d1e6",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/logits.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/logits.py",
+      "original_sha256": "4cb9409093957a423a80f8ad7ca8f5409c3574d32f19a4fd1178384ee961d16e",
+      "staged_sha256": "4cb9409093957a423a80f8ad7ca8f5409c3574d32f19a4fd1178384ee961d16e",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/models.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/models.py",
+      "original_sha256": "c5b3816f7f4bae7a0e5235134b53db10aed2ab0de644cd73bede246068d8d746",
+      "staged_sha256": "c5b3816f7f4bae7a0e5235134b53db10aed2ab0de644cd73bede246068d8d746",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/power_analysis.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/power_analysis.py",
+      "original_sha256": "c3249801dd87630e71de5decf89b65039c78a487107daf8df39dece4d47e7a0e",
+      "staged_sha256": "c3249801dd87630e71de5decf89b65039c78a487107daf8df39dece4d47e7a0e",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/reporting.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/reporting.py",
+      "original_sha256": "a18c1a0d64d411920c75d7b162fc57b3588c93df017ca77c2a9c0139d807d1d0",
+      "staged_sha256": "a18c1a0d64d411920c75d7b162fc57b3588c93df017ca77c2a9c0139d807d1d0",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/robustness.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/robustness.py",
+      "original_sha256": "57e555657c293142ec8521057503093a969d1d833f377442cf9dded674d640ef",
+      "staged_sha256": "57e555657c293142ec8521057503093a969d1d833f377442cf9dded674d640ef",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/statistics.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/statistics.py",
+      "original_sha256": "97b7055183267f925970e079d29a2b6f8b795b1880640d1fbf95c5aa9591aebe",
+      "staged_sha256": "97b7055183267f925970e079d29a2b6f8b795b1880640d1fbf95c5aa9591aebe",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/verify_external.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/verify_external.py",
+      "original_sha256": "aa0b9bef8f388d74f4b7452544d2670113565264ba2de80203166b6031da4ec7",
+      "staged_sha256": "aa0b9bef8f388d74f4b7452544d2670113565264ba2de80203166b6031da4ec7",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/source/__init__.py": {
+      "original_relative_path": "results/phase3-20261117-095543-473/source/__init__.py",
+      "original_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "staged_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/environment.json": {
+      "original_relative_path": "results/phase3-20261117-095543-473/environment.json",
+      "original_sha256": "b004fe7266049fb557e6970d6493a88b1fc061771aebcec0be02879863e93b08",
+      "staged_sha256": "a5e66e09fb6c91343f88f783348825d82906bb3a922392130481eccd8bfc8c2f",
+      "operation": "redacted execution descriptor; not the raw invocation",
+      "redacted_fields": [
+        "executable",
+        "platform",
+        "argv"
+      ],
+      "unchanged_public_fields_sha256": "1f231d5fb5a701fd30931f369159dfff2c25a40040ab86d433056f003197ac2d"
+    },
+    "evidence/phase3/configuration.yaml": {
+      "original_relative_path": "configs/phase3.yaml",
+      "original_sha256": "391b8fb17c48c5ea20453c7dd1a286ffebeca0de2097ed5576a38f3dd0c30a70",
+      "staged_sha256": "391b8fb17c48c5ea20453c7dd1a286ffebeca0de2097ed5576a38f3dd0c30a70",
+      "operation": "byte-identical"
+    },
+    "evidence/phase3/validation.md": {
+      "original_relative_path": "results/phase3-20261117-095543-473/validation.md",
+      "original_sha256": "683195ba6f8676bee7e2e50889ba3b467a62f8aca65cb9c0d72dc7ba13b51a20",
+      "staged_sha256": "62b147153a9a52615a28666f123f51c76f8bf77373bd9b3d1bd073c7a7631a0f",
+      "operation": "regenerated conditional narrative; unchanged table values"
+    },
+    "evidence/datasets/banknote.data": {
+      "original_relative_path": "results/external-cache/banknote.data",
+      "original_sha256": "d0539aaed2139ba7a587b3e34fb345ce503ff7d5d33dbf9912d8e195ce425cb9",
+      "staged_sha256": "d0539aaed2139ba7a587b3e34fb345ce503ff7d5d33dbf9912d8e195ce425cb9",
+      "operation": "byte-identical"
+    },
+    "evidence/datasets/ionosphere.data": {
+      "original_relative_path": "results/external-cache/ionosphere.data",
+      "original_sha256": "46d52186b84e20be52918adb93e8fb9926b34795ff7504c24350ae0616a04bbd",
+      "staged_sha256": "46d52186b84e20be52918adb93e8fb9926b34795ff7504c24350ae0616a04bbd",
+      "operation": "byte-identical"
+    }
+  },
+  "trust": "Local source hashes checked at export; not publisher signatures. Original private metadata remains local."
+}
